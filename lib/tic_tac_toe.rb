@@ -121,6 +121,13 @@ def play(board)
   until over?(board)
     turn(board)
   end
+
+  winner(board) == "X"
+    puts "Congratulations X!"
+  winner(board) == "O"
+    puts "Congratulations O!"
+  draw?(board)
+    puts "Cat's Game!"
 end
 
 #winner(board)
