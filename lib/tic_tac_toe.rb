@@ -88,14 +88,21 @@ def full?(board)
 end
 
 def draw?(board)
-  if full?(board) && won?(board)
-    false
-  elsif full?(board) && !won?(board)
-    true
-  else !full?(board)
-    false
+  !full?(board) && won?(board)
+  full?(board) && !won?(board)
+  !full?(board)
   end
 end
+
+#def draw?(board)
+#  if full?(board) && won?(board)
+#    false
+#  elsif full?(board) && !won?(board)
+#    true
+#  else !full?(board)
+#    false
+#  end
+#end
 
 def over?(board)
   won?(board) || full?(board) || draw?(board)
