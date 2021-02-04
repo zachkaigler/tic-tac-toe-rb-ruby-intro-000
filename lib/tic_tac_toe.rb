@@ -122,8 +122,8 @@ def play(board)
     turn(board)
   end
 
-  winner(board)
-  over?(board)
+over?(board)
+winner(board)
 
   if over?(board) && winner(board) = "X"
     puts "Congratulations X!"
