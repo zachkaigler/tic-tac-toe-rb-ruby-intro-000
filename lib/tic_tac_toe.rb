@@ -120,9 +120,9 @@ def play(board)
 
   if over?(board) && winner(board) = "X"
     puts "Congratulations X!"
-  elsif winner(board) = "O"
+  elsif over?(board) && winner(board) = "O"
     puts "Congratulations O!"
-  elsif draw?(board)
+  elsif over?(board) && draw?(board)
     puts "Cat's Game!"
   end
 end
