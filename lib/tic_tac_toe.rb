@@ -121,18 +121,24 @@ def play(board)
   until over?(board)
     turn(board)
   end
-
-
-winner(board)
-
-  if over?(board) && winner(board) = "X"
-    puts "Congratulations X!"
-  elsif over?(board) && winner(board) = "O"
-    puts "Congratulations O!"
-  elsif over?(board) && draw?(board)
-    puts "Cat's Game!"
-  end
 end
+
+#winner(board)
+
+#  if over?(board) && winner(board) = "X"
+#    puts "Congratulations X!"
+#  elsif over?(board) && winner(board) = "O"
+#    puts "Congratulations O!"
+#  elsif over?(board) && draw?(board)
+#    puts "Cat's Game!"
+#  end
+#end
+
+
+
+
+
+
 
 #def play(board)
 #  counter = 0
