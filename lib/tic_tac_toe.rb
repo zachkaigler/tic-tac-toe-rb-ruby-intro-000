@@ -122,7 +122,7 @@ def play(board)
     turn(board)
   end
 
-over?(board)
+
 winner(board)
 
   if over?(board) && winner(board) = "X"
