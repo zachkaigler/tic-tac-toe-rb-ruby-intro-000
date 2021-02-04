@@ -88,10 +88,8 @@ def full?(board)
 end
 
 def draw?(board)
-  !full?(board) && won?(board)
-  full?(board) && !won?(board)
-  !full?(board)
-  end
+  won?(board)
+  full?(board)
 end
 
 #def draw?(board)
